@@ -6,15 +6,12 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 
 export default function MainBanner() {
-  const [images, setImages] = useState([]);
-
-  useEffect(() => {
-    const importAll = (r) => r.keys().map(r);
-    const imageFiles = importAll(
-      require.context("/public/images/banners", false, /\.webp$/),
-    );
-    setImages(imageFiles);
-  }, []);
+  const images = [
+    "https://res.cloudinary.com/denwa7qem/image/upload/v1734008898/toon4_hxter6.webp",
+    "https://res.cloudinary.com/denwa7qem/image/upload/v1734008898/toon2_v6hp3t.webp",
+    "https://res.cloudinary.com/denwa7qem/image/upload/v1734008898/toon1_tfusjt.webp",
+    "https://res.cloudinary.com/denwa7qem/image/upload/v1734008898/toon3_rzwea2.webp",
+  ];
 
   //   TODO: 액티브 페이지 색상 변경
   //   .splide__pagination__page.is-active
@@ -36,18 +33,18 @@ export default function MainBanner() {
           padding: "15%",
         }}
       >
-        {images.map((src, index) => (
-          <SplideSlide>
-            <Image
-              className="rounded-md"
-              key={index}
-              src={src}
-              alt={`Banner ${index + 1}`}
-              width={600}
-              height={300}
-            />
-          </SplideSlide>
-        ))}
+        {images &&
+          images.map((src, index) => (
+            <SplideSlide key={index}>
+              <Image
+                className="rounded-md"
+                src={src}
+                alt={`Banner ${index + 1}`}
+                width={600}
+                height={300}
+              />
+            </SplideSlide>
+          ))}
       </Splide>
     </div>
   );

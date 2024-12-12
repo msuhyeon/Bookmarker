@@ -12,6 +12,9 @@ const nextConfig = {
   sassOptions: {
     additionalData: `$var: red;`,
   },
+  images: {
+    domains: ["res.cloudinary.com"],
+  },
 };
 
 module.exports = nextConfig;

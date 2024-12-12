@@ -13,6 +13,9 @@ export default {
         foreground: "var(--foreground)",
         footer: "#292524",
       },
+      screens: {
+        lg: "1200px",
+      },
     },
   },
   plugins: [],
