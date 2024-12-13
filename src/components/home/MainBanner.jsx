@@ -17,7 +17,7 @@ export default function MainBanner() {
   //   .splide__pagination__page.is-active
 
   return (
-    <div className="mt-2 flex justify-center">
+    <div className="my-3 flex justify-center">
       <Splide
         aria-label="Webtoon cover Images"
         options={{

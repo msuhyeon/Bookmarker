@@ -12,6 +12,8 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         footer: "#292524",
+        card: "#ec664a",
+        genre: "#126dda",
       },
       screens: {
         lg: "1200px",
