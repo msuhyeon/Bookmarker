@@ -5,7 +5,7 @@ import logoImage from "/public/images/logo/logo_header.png";
 export default function Header() {
   return (
     // <div className="min-w-lg flex justify-between px-20 py-6">
-    <div className="flex w-full justify-between px-4 py-6 lg:mx-auto lg:w-[1200px]">
+    <div className="flex w-full min-w-[1200px] justify-between px-4 py-6 lg:mx-auto lg:w-[1200px]">
       <Image
         className="object-contain"
         src={logoImage}
