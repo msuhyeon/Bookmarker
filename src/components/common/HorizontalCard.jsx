@@ -1,6 +1,6 @@
 export default function HorizontalCard() {
   return (
-    <div className="flex h-[150px] w-[300px] overflow-hidden rounded-lg border-2 border-solid border-sky-500">
+    <div className="flex h-[150px] w-[280px] overflow-hidden rounded-lg border-2 border-solid border-sky-500">
       <div className="bg-card w-28">이미지</div>
       <div className="flex flex-col justify-between p-2">
         <p>
